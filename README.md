@@ -15,16 +15,8 @@
 
 ## Installation
 
-Install via NPM:
-
 ```bash
 npm i @frctl/{{ name }} --save
-```
-
-Or with [Yarn](http://yarnpkg.com):
-
-```bash
-yarn add @frctl/{{ name }}
 ```
 
 ## API
