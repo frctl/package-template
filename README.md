@@ -9,12 +9,32 @@
 
 {{ introduction }}
 
+```js
 {{ quick-code-example }}
+```
 
 ## Installation
 
+Install via NPM:
+
+```bash
+npm i @frctl/{{ name }} --save
+```
+
+Or using Yarn:
+
+```bash
+yarn add @frctl/{{ name }}
+```
+
 ## API
+
+{{ api-docs }}
 
 ## Usage
 
+{{ usage-info }}
+
 ## Requirements
+
+Node >= v6.0 is required.
