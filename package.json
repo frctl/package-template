@@ -1,0 +1,46 @@
+{
+  "name": "@frctl/{{ name }}",
+  "description": "{{ description }}",
+  "version": "0.0.1",
+  "homepage": "https://github.com/frctl/{{ name }}",
+  "repository": "https://github.com/frctl/{{ name }}",
+  "bugs": "https://github.com/frctl/{{ name }}/issues",
+  "contributors": [
+    "Mark Perkins <mark@allmarkedup.com> (http://allmarkedup.com)",
+    "Danielle Huntrods <danielle.huntrods@clearleft.com> (http://clearleft.com)"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "xo && nyc npm run test:unit",
+    "test:unit": "mocha \"test/*.test.js\" --require test/support/env",
+    "test:watch": "npm run test:unit -- --watch",
+    "testlint": "npm run lint && npm run test",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "generate:docs": "jsdoc src/*",
+    "preversion": "npm run generate:docs",
+    "release": "np"
+  },
+  "dependencies": {
+    "@frctl/utils": "^0.3.1",
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "np": "^2.12.0",
+    "nyc": "^10.1.2",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ],
+    "space": true
+  }
+}
