@@ -21,7 +21,7 @@ Install via NPM:
 npm i @frctl/{{ name }} --save
 ```
 
-Or using Yarn:
+Or with [Yarn](http://yarnpkg.com):
 
 ```bash
 yarn add @frctl/{{ name }}
