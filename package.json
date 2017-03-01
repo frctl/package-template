@@ -25,7 +25,7 @@
     "release": "np"
   },
   "dependencies": {
-    "@frctl/utils": "^0.4.2",
+    "@frctl/utils": "^0.4.2"
   },
   "devDependencies": {
     "@frctl/eslint-config-frctl": "^0.1.0",
