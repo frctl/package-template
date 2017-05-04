@@ -17,15 +17,16 @@
     "access": "public"
   },
   "scripts": {
-    "test": "xo && nyc npm run test:unit",
-    "test:unit": "mocha \"test/*.test.js\" --require test/support/env",
+    "test": "npm run lint:fix && nyc npm run test:unit",
+    "test:unit": "mocha \"test/**/*.test.js\" --require test/support/env",
     "test:watch": "npm run test:unit -- --watch",
     "lint": "xo",
     "lint:fix": "xo --fix",
+    "generate:docs": "jsdoc src/*",
     "release": "np"
   },
   "dependencies": {
-    "@frctl/utils": "^0.4.2"
+    "@frctl/utils": "^0.5.2"
   },
   "devDependencies": {
     "@frctl/eslint-config-frctl": "^0.1.0",
