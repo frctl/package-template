@@ -16,7 +16,7 @@
 ## Installation
 
 ```bash
-npm i @frctl/{{ name }} --save
+npm i @frctl/{{ name }}
 ```
 
 ## API
@@ -29,4 +29,4 @@ npm i @frctl/{{ name }} --save
 
 ## Requirements
 
-Node >= v6.0 is required.
+Node >= v7.6 is required.
